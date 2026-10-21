@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nguyễn Văn Đậu - Focuses on smart layout flow, child safety, community integration, and long-term flexibility.">
+    <meta name="author" content="rozee">
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="assets/img/favicon.png"> -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- All CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Site Title -->
+    <title>Nguyễn Văn Đậu</title>
+
+    <style>
+      .container-welcome {
+        display: flex;
+        align-items: center;         /* Vertically centers the h1 */
+        justify-content: center;     /* Horizontally centers the h1 (Optional) */
+        height: 116px;               /* The div needs a defined height to center vertically */
+        background-color: #c5a56f80;
+      }
+
+      .container-welcome > h1 {
+        color: white;
+      }
+
+      .no-counter-increment::before {
+        counter-increment: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Start Preloader -->
+    <div class="cs_preloader cs_center">
+      <div class="cs_preloader_in cs_center_column text-center">
+        <span class="cs_hotel_icon cs_center cs_radius_100 cs_mb_24 position-relative">
+        <span class="cs_fs_64 cs_accent_color cs_heading_font position-relative z-1">NVĐ</span>
+        </span>
+        <h3 class="cs_loading_text cs_fs_24 text-uppercase mb-0">đang tải</h3>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_type_2 cs_white_color cs_sticky_header">
+      <div class="cs_header_main position-relative">
+        <div class="container">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_left">
+              <!--<a href="index.html" aria-label="Home page link" class="cs_site_brand">
+                <img src="assets/img/logo.svg" alt="Logo">               
+              </a>-->
+              <a href="index.html" aria-label="Home page link" class="cs_site_brand">
+                <img src="assets/img/logo.svg" alt="Logo" style="height: 60px !important;">             
+              </a>
+            </div>
+            <div class="cs_main_header_center">
+              <div class="cs_nav">
+                <div class="cs_nav_list_wrap">
+                  <div class="cs_nav_links_wrap">
+                    <ul class="cs_nav_list cs_mp_0">
+                      <!--
+                      <li class="menu-item-has-children">
+                        <a href="">Home</a>
+                        <ul>
+                          <li><a href="index.html" aria-label="Nav link">Home Main</a></li>
+                          <li><a href="home-v2.html" aria-label="Nav link">Home V2</a></li>
+                          <li><a href="home-v3.html" aria-label="Nav link">Home V3</a></li>
+                        </ul>
+                      </li>
+                      -->
+                      <li><a href="index.html" aria-label="Nav link">Trang chủ</a></li><!--Home-->
+                      <li><a href="about-us.html" aria-label="Nav link">Giới thiệu</a></li><!--About-->
+                      <!--
+                      <li class="menu-item-has-children">
+                        <a href="">Rooms</a>
+                        <ul>
+                          <li><a href="rooms.html" aria-label="Nav link">Rooms Grid View</a></li>
+                          <li><a href="room-details-v1.html" aria-label="Nav link">Room Details V1</a></li>
+                          <li><a href="room-details-v2.html" aria-label="Nav link">Room Details V2</a></li>
+                          <li><a href="facilities.html" aria-label="Nav link">Room Facilities</a></li>
+                          <li><a href="search-result.html" aria-label="Nav link">Room Search Result</a></li>
+                          <li><a href="payment.html" aria-label="Nav link">Payment Page</a></li>
+                        </ul>
+                      </li>
+                      -->
+                    </ul>
+                    <ul class="cs_nav_list cs_mp_0">
+                      <!--
+                      <li class="menu-item-has-children">
+                        <a href="">Pages</a>
+                        <ul>
+                          <li><a href="offers.html" aria-label="Nav link">Our Packages</a></li>
+                          <li><a href="services.html" aria-label="Nav link">Our Services</a></li>
+                          <li><a href="service-details.html" aria-label="Nav link">Service Details</a></li>
+                          <li><a href="gallery.html" aria-label="Nav link">Our Gallery</a></li>
+                          <li><a href="faq.html" aria-label="Nav link">FAQ & Answer</a></li>
+                          <li><a href="register.html" aria-label="Nav link">Register</a></li>
+                          <li><a href="login.html" aria-label="Nav link">Login</a></li>
+                          <li><a href="password.html" aria-label="Nav link">Password</a></li>
+                          <li><a href="error.html" aria-label="Nav link">404 Page</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item-has-children">
+                        <a href="">Blog</a>
+                        <ul>
+                          <li><a href="blog.html" aria-label="Nav link">Blog</a></li>
+                          <li><a href="blog-details.html" aria-label="Nav link">Blog Details</a></li>
+                        </ul>
+                      </li>
+                      -->
+                      <li><a href="blog.html" aria-label="Nav link">Blog</a></li>
+                      <li><a href="contact-us.html" aria-label="Nav link">Liên hệ</a></li><!--Contact-->
+                      <li class="cs_language_select">
+                        <div class="cs_language_switcher">
+                          <input type="button" value="EN">
+                        </div>
+                        <div class="cs_language_dropdown">
+                          <input type="button" value="EN">
+                          <input type="button" value="BN">
+                          <input type="button" value="ES">
+                          <input type="button" value="AR">
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Header Search Container -->
+    <div class="cs_header_search">
+      <div class="cs_header_search_in">
+        <div class="container">
+          <div class="cs_header_search_box">
+            <form action="#" class="cs_search_form position-relative">
+              <input type="text" name="search-text" placeholder="Tìm kiếm ..." autocomplete="search-text">
+              <button class="cs_search_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_39_55762)">
+                    <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37878 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37878 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_39_55763">
+                      <rect width="24" height="24" fill="currentColor"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </form>
+            <button class="cs_close" type="button"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="cs_sidenav_overlay"></div>
+    </div>
+    <!-- End Header Search Container -->
+    <!-- End Header Section -->
+
+
+
+    <!-- Start Hero Section -->
+    <section class="cs_hero cs_style_1 cs_bg_filed cs_hobble position-relative" data-src="assets/img/hero-img-1.jpg">
+      <div class="container position-relative z-2">
+        <div class="cs_hero_content text-center">
+          <!-- <h1 class="cs_hero_title cs_fs_180 cs_white_color cs_mb_28" data-aos="zoom-in">YOUR HOME <span class="cs_accent_color cs_ternary_font cs_hover_layer_2">away</span>FROM HOME</h1> -->
+           <h1 class="cs_hero_title cs_fs_180 cs_white_color cs_mb_28" data-aos="zoom-in">Tổ Ấm <span class="cs_accent_color cs_ternary_font cs_hover_layer_2">Thân</span>Thương</h1>
+          <!-- <p class="cs_fs_20 cs_light cs_white_color mb-0">Experience luxury at its finest with our beautiful hotel facilities.</p> -->
+          <!-- <p class="cs_fs_20 cs_light cs_white_color mb-0">Luxury at its finest with our friendly and helpful residences</p> -->
+           <p class="cs_fs_20 cs_light cs_white_color mb-0">Sự sang trọng ở mức tuyệt hảo, đi cùng với những gương mặt thân thiện nhất trong khu phố.</p>
+          <form action="search-result.html" class="cs_form cs_style_1 cs_fs_16 cs_white_bg position-relative text-start" data-aos="fade-up"
+            style="visibility: hidden !important;">
+            <div class="cs_date_items">
+              <input type="text" name="datetimes" class="cs_datetimes" id="check-in">
+              <div class="cs_form_item cs_date_item">
+                <label for="check-in" class="cs_normal">Check in</label>
+                <span class="cs_start_date cs_start_date_value">2025-04-27</span>
+              </div>
+              <div class="cs_form_item cs_date_item">
+                <label for="check-in" class="cs_normal">Check out</label>
+                <span class="cs_end_date cs_end_date_value">2025-04-28</span>
+              </div>
+            </div>
+            <div class="cs_form_item">
+              <label for="guest" class="cs_normal">Guest</label>
+              <div class="cs_quantity_wrap">
+                <input type="button" name="guest" class="cs_quantity_btn" value="2 Adults" id="guest">
+                <div class="cs_quantity_dropdown">
+                  <div class="cs_quantity_dropdown_item">
+                    <span class="cs_quantity_title">Adults</span>
+                    <div class="cs_quantity cs_adult">
+                      <input type="number" name="anumber" min="1" max="3" step="1" value="2">
+                      <div class="cs_quantity_nav">
+                        <div class="cs_quantity_button cs_quantity_up">+</div>
+                        <div class="cs_quantity_button cs_quantity_down">-</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cs_quantity_dropdown_item">
+                    <span class="cs_quantity_title">Children</span>
+                    <div class="cs_quantity cs_children">
+                      <input type="number" name="cnumber" min="0" max="4" step="1" value="0">
+                      <div class="cs_quantity_nav">
+                        <div class="cs_quantity_button cs_quantity_up">+</div>
+                        <div class="cs_quantity_button cs_quantity_down">-</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_form_item">
+              <label for="room" class="cs_normal">Room</label>
+              <div class="cs_quantity_wrap">
+                <input type="button" name="room" value="deluxe room" class="cs_select_btn" id="room">
+                <div class="cs_quantity_dropdown">
+                  <div class="cs_options_wrapper">
+                    <input type="button" name="deluxe" value="deluxe room">
+                    <input type="button" name="luxury" value="luxury room">
+                    <input type="button" name="sleeping" value="sleeping room">
+                    <input type="button" name="leisure" value="leisure room">
+                    <input type="button" name="reading" value="reading room">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cs_form_item_btn">
+              <button type="submit" aria-label="Hotel booking button" class="cs_btn cs_style_1 cs_heading_bg cs_white_color cs_fs_20 cs_medium"><span>BOOK NOW</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="container-welcome" data-aos="fade-up">
+            <h1>Nguyễn Văn Đậu Chào Bạn - 2026</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+
+
+    <!-- Start About Section -->
+    <section class="cs_cream_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_card cs_style_1 cs_center_column text-center">
+          <span class="cs_flower_shape" data-aos="zoom-in">
+          <img src="assets/img/flower.svg" alt="Flower shape">
+          </span>
+          <!-- <h2 class="cs_card_title cs_fs_64 position-relative z-1 mb-0">PROVIDING OUR GUEST WITH UNFORGETTABLE
+            EXPERIENCES TO CHERISH <span class="cs_accent_color cs_ternary_font">forever</span>
+          </h2> -->
+          <h2 class="cs_card_title cs_fs_64 position-relative z-1 mb-0" style="letter-spacing: 6px !important;">MỘT CỘNG ĐỒNG THÂN THIỆN ĐƯỢC THIẾT KẾ VỚI SỰ THOẢI MÁI VÀ AN TOÀN CỦA GIA ĐÌNH BẠN LÀ <span class="cs_accent_color cs_ternary_font">ưu tiên hàng đầu</span>
+          </h2>
+
+          <div class="cs_card_thumbnail" data-aos="fade-up">
+            <img src="assets/img/about-img-1.jpg" alt="Card image">
+          </div>
+          <!-- <p class="cs_card_subtitle cs_fs_20 cs_light">Breezie Hotel and Resort is a premiere luxury hotel with world-class amenities and services. We are committed to give you <br> the best vacation experience you will ever had and cherish with our facilities and comfortability.</p> -->
+          <p class="cs_card_subtitle cs_fs_20 cs_light">Nguyễn Văn Đậu là khu căn hộ sang trọng đẳng cấp, cung cấp các tiện ích và dịch vụ đạt chuẩn quốc tế. Chúng tôi cam kết mang đến cho gia đình quý khách trải nghiệm sống lý tưởng nhất – một trải nghiệm đáng trân trọng nhờ vào cơ sở vật chất hoàn hảo cùng sự tiện nghi vượt trội.</p>
+          
+          <!-- <a href="about-us.html" aria-label="About page visit link" class="cs_text_btn cs_fs_20 cs_medium cs_heading_color" data-aos="zoom-in">learn more</a> -->
+          <a href="about-us.html" aria-label="About page visit link" class="cs_text_btn cs_fs_20 cs_medium cs_heading_color" data-aos="zoom-in">tìm hiểu thêm</a>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End About Section --> 
+
+
+    <!-- Start Facility Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <!-- <p class="cs_section_subtitle cs_fs_24 cs_accent_color cs_mb_16 text-uppercase">facilities</p> -->
+          <p class="cs_section_subtitle cs_fs_24 cs_accent_color cs_mb_16 text-uppercase">cơ sở - gần đây</p>
+          <!-- <h2 class="cs_section_title cs_fs_64 mb-0" data-aos="zoom-in">We Provide You</h2> -->
+          <h2 class="cs_section_title cs_fs_64 mb-0" data-aos="zoom-in">Chúng tôi cung cấp cho bạn</h2>          
+        </div>
+        <div class="cs_height_73 cs_height_lg_45"></div>
+        <div class="cs_grid cs_style_1">
+          <div class="cs_card cs_style_3" data-aos="fade-up">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-1.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Hồ Bơi Vô Cực</a>
+              </h3>
+              <p class="cs_card_subtitle">Hãy tận hưởng khung cảnh tuyệt đẹp khi bơi trong hồ bơi vô cực tuyệt đẹp của chúng tôi.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="200">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-2.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Spa & Chăm Sóc Sức Khỏe</a>
+              </h3>
+              <p class="cs_card_subtitle">Tận hưởng sự thư giãn tại trung tâm spa & chăm sóc sức khỏe của chúng tôi. Giảm giá 15% khi đặt phòng sớm.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="400">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-3.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Trung Tâm Thể Hình</a>
+              </h3>
+              <p class="cs_card_subtitle">Hãy rèn luyện sức khỏe giữa kỳ nghỉ tại trung tâm thể hình đầy đủ của chúng tôi.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-4.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Nhà Hàng & Quầy Bar</a>
+              </h3>
+              <p class="cs_card_subtitle">Thưởng thức những món ăn ngon, thưởng thức đồ uống tuyệt vời, kết nối với những con người tuyệt vời ở đây.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="200">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-5.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Trung Tâm Kinh Doanh</a>
+              </h3>
+              <p class="cs_card_subtitle">Việc lên kế hoạch cho các sự kiện và hội nghị của bạn không thể hiệu quả hơn thế này.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="400">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-6.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Phòng Họp</a>
+              </h3>
+              <p class="cs_card_subtitle">Việc lên kế hoạch cho các sự kiện và hội nghị của bạn không thể hiệu quả hơn thế này.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-7.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Câu Lạc Bộ Trẻ Em</a>
+              </h3>
+              <p class="cs_card_subtitle">Hãy để các con bạn vui chơi trong khi bạn có thời gian một mình tại khách sạn của chúng tôi.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="200">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-8.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Sân Tennis</a>
+              </h3>
+              <p class="cs_card_subtitle">Dành cho các vận động viên quần vợt. Hoàn thiện với thiết bị cho thuê và hướng dẫn viên.</p>
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+          <div class="cs_card cs_style_3" data-aos="fade-up" data-aos-delay="400">
+            <a href="room-details-v1.html" aria-label="View room details page link" class="cs_card_thumbnail cs_zoom overflow-hidden">
+            <img src="assets/img/facility-img-9.jpg" alt="Facility image">
+            </a>
+            <div class="cs_card_info">
+              <h3 class="cs_card_title cs_fs_48 cs_mb_19">
+                <a href="room-details-v1.html" aria-label="View room details page link">Sân Golf</a>
+              </h3>
+              <p class="cs_card_subtitle">Hãy thử thách bản thân tại sân golf được bố trí đa dạng của chúng tôi. Được quốc tế công nhận.</p>
+              <!--
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">see more</a>
+              -->
+              <a href="room-details-v1.html" aria-label="View room details page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Facility Section -->
+
+
+
+    <!-- Start Award Section -->
+    <section class="cs_heading_bg" id="awards">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 text-center">
+          <p class="cs_section_subtitle cs_fs_24 cs_accent_color cs_mb_16 text-uppercase">Giải Thưởng</p>
+          <h2 class="cs_section_title cs_fs_64 cs_white_color mb-0" data-aos="fade-down">Chỉ Những Điều Tốt Nhất Cho Bạn</h2>
+        </div>
+        <div class="cs_height_73 cs_height_lg_45"></div>
+        <div class="cs_award_items_wrapper">
+          <div class="cs_award_item cs_style_1 cs_center_column text-center">
+            <div class="cs_award_year cs_center cs_radius_100 cs_fs_64 cs_accent_color cs_mb_56 cs_mb_lg_24">2024</div>
+            <div class="cs_award_info">
+              <h3 class="cs_award_title cs_fs_48 cs_white_color cs_mb_27 cs_mb_lg_20">Căn Hộ Cao Cấp Tốt Nhất</h3>
+              <p class="cs_white_color cs_medium mb-0">Giải thưởng Travelio</p>
+            </div>
+          </div>
+          <div class="cs_award_item cs_style_1 cs_center_column text-center">
+            <div class="cs_award_year cs_center cs_radius_100 cs_fs_64 cs_accent_color cs_mb_56 cs_mb_lg_24">2023</div>
+            <div class="cs_award_info">
+              <h3 class="cs_award_title cs_fs_48 cs_white_color cs_mb_27 cs_mb_lg_20">Spa & Wellness Tốt Nhất</h3>
+              <p class="cs_white_color cs_medium mb-0">Spa World Awards</p>
+            </div>
+          </div>
+          <div class="cs_award_item cs_style_1 cs_center_column text-center">
+            <div class="cs_award_year cs_center cs_radius_100 cs_fs_64 cs_accent_color cs_mb_56 cs_mb_lg_24">2022</div>
+            <div class="cs_award_info">
+              <h3 class="cs_award_title cs_fs_48 cs_white_color cs_mb_27 cs_mb_lg_20">Nhà Hàng Tốt Nhất</h3>
+              <p class="cs_white_color cs_medium mb-0">Giải Thưởng Foodie F&B</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Award Section -->
+
+
+
+    <!-- Start Testimonial Section -->
+    <section class="cs_slider cs_style_1 cs_slider_gap_30 cs_bg_filed" data-src="assets/img/testimonial-bg-1.jpg">
+      <div class="cs_height_100 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_testimonial_wrapper_1">
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="1">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_1 cs_center_column text-center">
+                  <span class="cs_quote_icon cs_center cs_accent_color cs_mb_24">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5333 47.1995C9.86666 44.2662 8.26666 41.0662 8.26666 35.7329C8.26666 26.3995 14.9333 18.1329 24.2667 13.8662L26.6667 17.3329C17.8667 22.1329 16 28.2662 15.4667 32.2662C16.8 31.4662 18.6667 31.1995 20.5333 31.4662C25.3333 31.9995 29.0667 35.7329 29.0667 40.7995C29.0667 43.1995 28 45.5995 26.4 47.4662C24.5333 49.3329 22.4 50.1329 19.7333 50.1329C16.8 50.1329 14.1333 48.7995 12.5333 47.1995ZM39.2 47.1995C36.5333 44.2662 34.9333 41.0662 34.9333 35.7329C34.9333 26.3995 41.6 18.1329 50.9333 13.8662L53.3333 17.3329C44.5333 22.1329 42.6667 28.2662 42.1333 32.2662C43.4667 31.4662 45.3333 31.1995 47.2 31.4662C52 31.9995 55.7333 35.7329 55.7333 40.7995C55.7333 43.1995 54.6667 45.5995 53.0667 47.4662C51.4667 49.3329 49.0667 50.1329 46.4 50.1329C43.4667 50.1329 40.8 48.7995 39.2 47.1995Z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <blockquote>Nguyễn Văn Đậu là nơi lý tưởng để mang đến cho gia đình một môi trường sống sang trọng. Cơ sở vật chất tại đây đạt chuẩn cao cấp, cùng với dịch vụ vô cùng xuất sắc.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-1.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Camelia Harrington</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Du khách</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_1 cs_center_column text-center">
+                  <span class="cs_quote_icon cs_center cs_accent_color cs_mb_24">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5333 47.1995C9.86666 44.2662 8.26666 41.0662 8.26666 35.7329C8.26666 26.3995 14.9333 18.1329 24.2667 13.8662L26.6667 17.3329C17.8667 22.1329 16 28.2662 15.4667 32.2662C16.8 31.4662 18.6667 31.1995 20.5333 31.4662C25.3333 31.9995 29.0667 35.7329 29.0667 40.7995C29.0667 43.1995 28 45.5995 26.4 47.4662C24.5333 49.3329 22.4 50.1329 19.7333 50.1329C16.8 50.1329 14.1333 48.7995 12.5333 47.1995ZM39.2 47.1995C36.5333 44.2662 34.9333 41.0662 34.9333 35.7329C34.9333 26.3995 41.6 18.1329 50.9333 13.8662L53.3333 17.3329C44.5333 22.1329 42.6667 28.2662 42.1333 32.2662C43.4667 31.4662 45.3333 31.1995 47.2 31.4662C52 31.9995 55.7333 35.7329 55.7333 40.7995C55.7333 43.1995 54.6667 45.5995 53.0667 47.4662C51.4667 49.3329 49.0667 50.1329 46.4 50.1329C43.4667 50.1329 40.8 48.7995 39.2 47.1995Z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <blockquote>Nguyễn Văn Đậu là nơi lý tưởng để mang đến cho gia đình một môi trường sống sang trọng. Cơ sở vật chất tại đây đạt chuẩn cao cấp, cùng với dịch vụ vô cùng xuất sắc.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-2.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Alyssa Sweet</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Resort Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_1 cs_center_column text-center">
+                  <span class="cs_quote_icon cs_center cs_accent_color cs_mb_24">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5333 47.1995C9.86666 44.2662 8.26666 41.0662 8.26666 35.7329C8.26666 26.3995 14.9333 18.1329 24.2667 13.8662L26.6667 17.3329C17.8667 22.1329 16 28.2662 15.4667 32.2662C16.8 31.4662 18.6667 31.1995 20.5333 31.4662C25.3333 31.9995 29.0667 35.7329 29.0667 40.7995C29.0667 43.1995 28 45.5995 26.4 47.4662C24.5333 49.3329 22.4 50.1329 19.7333 50.1329C16.8 50.1329 14.1333 48.7995 12.5333 47.1995ZM39.2 47.1995C36.5333 44.2662 34.9333 41.0662 34.9333 35.7329C34.9333 26.3995 41.6 18.1329 50.9333 13.8662L53.3333 17.3329C44.5333 22.1329 42.6667 28.2662 42.1333 32.2662C43.4667 31.4662 45.3333 31.1995 47.2 31.4662C52 31.9995 55.7333 35.7329 55.7333 40.7995C55.7333 43.1995 54.6667 45.5995 53.0667 47.4662C51.4667 49.3329 49.0667 50.1329 46.4 50.1329C43.4667 50.1329 40.8 48.7995 39.2 47.1995Z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <blockquote>Nguyễn Văn Đậu là nơi lý tưởng để mang đến cho gia đình một môi trường sống sang trọng. Cơ sở vật chất tại đây đạt chuẩn cao cấp, cùng với dịch vụ vô cùng xuất sắc.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-3.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Mackenzie Bushell</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Restaurant Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs_slide">
+                <div class="cs_testimonial cs_style_1 cs_center_column text-center">
+                  <span class="cs_quote_icon cs_center cs_accent_color cs_mb_24">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5333 47.1995C9.86666 44.2662 8.26666 41.0662 8.26666 35.7329C8.26666 26.3995 14.9333 18.1329 24.2667 13.8662L26.6667 17.3329C17.8667 22.1329 16 28.2662 15.4667 32.2662C16.8 31.4662 18.6667 31.1995 20.5333 31.4662C25.3333 31.9995 29.0667 35.7329 29.0667 40.7995C29.0667 43.1995 28 45.5995 26.4 47.4662C24.5333 49.3329 22.4 50.1329 19.7333 50.1329C16.8 50.1329 14.1333 48.7995 12.5333 47.1995ZM39.2 47.1995C36.5333 44.2662 34.9333 41.0662 34.9333 35.7329C34.9333 26.3995 41.6 18.1329 50.9333 13.8662L53.3333 17.3329C44.5333 22.1329 42.6667 28.2662 42.1333 32.2662C43.4667 31.4662 45.3333 31.1995 47.2 31.4662C52 31.9995 55.7333 35.7329 55.7333 40.7995C55.7333 43.1995 54.6667 45.5995 53.0667 47.4662C51.4667 49.3329 49.0667 50.1329 46.4 50.1329C43.4667 50.1329 40.8 48.7995 39.2 47.1995Z" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <blockquote>Nguyễn Văn Đậu là nơi lý tưởng để mang đến cho gia đình một môi trường sống sang trọng. Cơ sở vật chất tại đây đạt chuẩn cao cấp, cùng với dịch vụ vô cùng xuất sắc.</blockquote>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-4.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Molly Farran-Ridge</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Resort Client</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_height_150 cs_height_lg_60"></div>
+          <div class="cs_height_26 cs_height_lg_0"></div>
+          <div class="cs_center" style="background-color: #ffffff60; padding-top: 5px !important; padding-bottom: 5px !important;">
+            <div class="cs_pagination cs_style_1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_88 cs_height_lg_80"></div>
+    </section>
+    <!-- End Testimonial Section -->
+
+
+
+    <!-- Start Gallery Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_gallery_wrapper">
+          <div class="cs_card cs_style_5">
+            <div class="row cs_gap_y_45">
+              <div class="col-lg-7">
+                <div class="cs_section_heading cs_style_1">
+                  <p class="cs_section_subtitle cs_fs_24 cs_accent_color text-uppercase mb-0">Phòng Trưng Bày</p>
+                  <h2 class="cs_section_title cs_fs_180 mb-0" data-aos="fade-right">Nguyễn Văn Đậu Trong Hình</h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="cs_card_thumbnail" data-aos="fade-left">
+                  <img src="assets/img/gallery-img-1.jpg" alt="Gallery image">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cs_card cs_style_5">
+            <div class="row cs_gap_y_30">
+              <div class="col-lg-5">
+                <div class="cs_card_thumbnail" data-aos="fade-up">
+                  <img src="assets/img/gallery-img-2.jpg" alt="Gallery image">
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="cs_card_text">
+                  <p class="mb-0">Hãy xem khách sạn và khu nghỉ dưỡng tuyệt đẹp của chúng tôi trong bộ sưu tập ảnh. Chúng tôi hy vọng bạn sẽ có thêm nhiều kỷ niệm đẹp tại đây!</p>
+                  <a href="gallery.html" aria-label="view gallery page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize" data-aos="fade-down">xem thêm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Gallery Section -->
+
+
+
+    <!-- Start Booking Section -->
+    <section class="cs_cream_bg cs_bg_filed" data-src="assets/img/cta-bg-1.svg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_cta cs_style_1 cs_center_column text-center">
+          <h2 class="cs_cta_heading cs_fs_64 cs_mb_24" data-aos="fade-down">Đặt Chuyến Tham Quan Ngay Hôm Nay</h2>
+          <p class="cs_mb_48 cs_mb_lg_30">Trải nghiệm sự sang trọng đỉnh cao cùng Nguyễn Văn Đậu. Hãy đặt chuyến tham quan ngay hôm nay để tận hưởng một chuyến đi đáng nhớ.</p>
+          <a href="rooms.html" aria-label="Room booking link" class="cs_btn cs_style_1 cs_heading_bg cs_white_color cs_medium text-uppercase" data-aos="fade-up">
+          <span>Đặt Ngay</span>
+          </a>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Booking Section -->
+
+
+
+    <!-- Start Blog Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_section_heading cs_style_1 cs_type_1 align-items-end">
+          <div class="cs_section_heading_left">
+            <p class="cs_section_subtitle cs_fs_24 cs_accent_color text-uppercase cs_mb_16">BLOG</p>
+            <h2 class="cs_section_title cs_fs_64 mb-0" data-aos="fade-down">Tin tức & Cập nhật của chúng tôi</h2>
+          </div>
+          <div class="cs_section_heading_right" data-aos="zoom-in">
+            <a href="blog.html" aria-label="view blog page link" class="cs_text_btn cs_accent_color cs_medium text-capitalize">đọc tất cả các đoạn</a>
+          </div>
+        </div>
+        <div class="cs_height_66 cs_height_lg_45"></div>
+        <div class="cs_slider cs_style_1 cs_slider_gap_20 cs_hover_show_arrows position-relative">
+          <div class="cs_slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="3" data-add-slides="3">
+            <div class="cs_slider_wrapper">
+              <div class="cs_slide">
+                <article class="cs_post cs_style_1">
+                  <a href="blog-details.html" aria-label="View post details" class="cs_post_thumbnail cs_zoom cs_mb_32 overflow-hidden">
+                  <img src="assets/img/post-img-1.jpg" alt="Post thumbnail">
+                  </a>
+                  <div class="cs_post_content">
+                    <div class="cs_post_meta cs_fs_16 cs_accent_color cs_normal cs_mb_8">T  I  P  S</div>
+                    <h3 class="cs_post_title cs_fs_40 cs_mb_20">
+                      <a href="blog-details.html" aria-label="View post details">10 mẹo cho kỳ nghỉ- <br> không căng thẳng</a>
+                    </h3>
+                    <div class="cs_avatar cs_style_1">
+                      <div class="cs_avatar_icon cs_center cs_radius_100">
+                        <img src="assets/img/avatar-2.jpg" alt="Avatar">
+                      </div>
+                      <div class="cs_avatar_info">
+                        <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Emily Smith</h3>
+                        <p class="cs_fs_16 cs_heading_color cs_normal mb-0">May 15, 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="cs_slide">
+                <article class="cs_post cs_style_1">
+                  <a href="blog-details.html" aria-label="View post details" class="cs_post_thumbnail cs_zoom cs_mb_32 overflow-hidden">
+                  <img src="assets/img/post-img-2.jpg" alt="Post thumbnail">
+                  </a>
+                  <div class="cs_post_content">
+                    <div class="cs_post_meta cs_fs_16 cs_accent_color cs_normal cs_mb_8">R E V I E W</div>
+                    <h3 class="cs_post_title cs_fs_40 cs_mb_20">
+                      <a href="blog-details.html" aria-label="View post details">Thực đơn <br> Tại chung cư Nguyễn Văn Đậu</a>
+                    </h3>
+                    <div class="cs_avatar cs_style_1">
+                      <div class="cs_avatar_icon cs_center cs_radius_100">
+                        <img src="assets/img/avatar-3.jpg" alt="Avatar">
+                      </div>
+                      <div class="cs_avatar_info">
+                        <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">David Lee</h3>
+                        <p class="cs_fs_16 cs_heading_color cs_normal mb-0">June 1, 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+
+            <!--
+              <div class="cs_slide">
+                <article class="cs_post cs_style_1">
+                  <a href="blog-details.html" aria-label="View post details" class="cs_post_thumbnail cs_zoom cs_mb_32 overflow-hidden">
+                  <img src="assets/img/post-img-3.jpg" alt="Post thumbnail">
+                  </a>
+                  <div class="cs_post_content">
+                    <div class="cs_post_meta cs_fs_16 cs_accent_color cs_normal cs_mb_8">T  I  P  S</div>
+                    <h3 class="cs_post_title cs_fs_40 cs_mb_20">
+                      <a href="blog-details.html" aria-label="View post details">Cách lên kế hoạch cho đám cưới hoàn hảo của bạn</a>
+                    </h3>
+                    <div class="cs_avatar cs_style_1">
+                      <div class="cs_avatar_icon cs_center cs_radius_100">
+                        <img src="assets/img/avatar-4.jpg" alt="Avatar">
+                      </div>
+                      <div class="cs_avatar_info">
+                        <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Samantha Patel</h3>
+                        <p class="cs_fs_16 cs_heading_color cs_normal mb-0">July 10, 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            -->
+
+              <div class="cs_slide">
+                <article class="cs_post cs_style_1">
+                  <a href="blog-details.html" aria-label="View post details" class="cs_post_thumbnail cs_zoom cs_mb_32 overflow-hidden">
+                  <img src="assets/img/post-img-1.jpg" alt="Post thumbnail">
+                  </a>
+                  <div class="cs_post_content">
+                    <div class="cs_post_meta cs_fs_16 cs_accent_color cs_normal cs_mb_8">T  I  P  S</div>
+                    <h3 class="cs_post_title cs_fs_40 cs_mb_20">
+                      <a href="blog-details.html" aria-label="View post details">Một ngày tại căn hộ của chúng tôi</a>
+                    </h3>
+                    <div class="cs_avatar cs_style_1">
+                      <div class="cs_avatar_icon cs_center cs_radius_100">
+                        <img src="assets/img/avatar-1.jpg" alt="Avatar">
+                      </div>
+                      <div class="cs_avatar_info">
+                        <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Jenith Jonce</h3>
+                        <p class="cs_fs_16 cs_heading_color cs_normal mb-0">May 15, 2023</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="cs_slider_arrows cs_style_1 cs_type_1">
+            <div class="cs_left_arrow cs_center cs_radius_100 slick-arrow cs_accent_bg cs_white_color">
+              <svg width="22" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1C1 1 4.96624 21.0179 21 20.8334" stroke="currentColor" stroke-width="2"/>
+                <path d="M1 41C1 41 4.96624 20.9821 21 21.1666" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="cs_right_arrow cs_center cs_radius_100 slick-arrow cs_accent_bg cs_white_color">
+              <svg width="22" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1C1 1 4.96624 21.0179 21 20.8334" stroke="currentColor" stroke-width="2"/>
+                <path d="M1 41C1 41 4.96624 20.9821 21 21.1666" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Blog Section -->
+
+
+
+    <!-- Start Newsletter Section -->
+    <section class="cs_cream_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_newsletter cs_style_1">
+          <div class="cs_section_heading cs_style_1 text-center">
+            <p class="cs_section_subtitle cs_fs_24 cs_accent_color cs_mb_16 text-uppercase">bản tin</p>
+            <h2 class="cs_section_title cs_fs_64 cs_mb_24" data-aos="fade-down">Tham Gia Danh Sách Gửi Thư Của Chúng Tôi</h2>
+            <p class="cs_mb_48 cs_mb_lg_30">Hãy tham gia danh sách nhận thư của chúng tôi để nhận các ưu đãi độc quyền, thông tin cập nhật và tin tức về Nguyễn Văn Đậu Apartment. <br> Trở thành người đầu tiên biết về các chương trình khuyến mãi, sự kiện và các ưu đãi đặc biệt của chúng tôi. Hãy đăng ký ngay để giữ kết nối với chúng tôi.</p>
+            <form action="#" class="cs_newsletter_form position-relative">
+              <input type="email" name="email" autocomplete="given-name" placeholder="Nhập địa chỉ email của bạn ..." required>
+              <button class="cs_btn cs_style_1 cs_heading_bg cs_white_color cs_medium text-uppercase" data-aos="zoom-in">
+              <span>Đăng ký</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Newsletter Section -->
+
+
+    <!-- Start Footer Section -->
+    <footer class="cs_footer cs_style_1 cs_type_1 cs_heading_bg cs_white_color">
+      <div class="cs_height_103 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_main">
+          <div class="cs_footer_nav cs_fs_48 cs_heading_font cs_mb_60">
+            <ul class="cs_footer_nav_list cs_mp_0">
+              <li><a href="about-us.html" aria-label="Page link">Giới thiệu</a></li>
+              <li><a href="blog.html" aria-label="Page link">Blog</a></li>
+              <li><a href="contact-us.html" aria-label="Page link">Liên hệ</a></li>
+              <!--
+              <li><a href="blog.html" aria-label="Page link">Blog</a></li>
+              <li><a href="contact-us.html" aria-label="Page link">Contact</a></li>
+              -->
+              <li>
+                <div class="cs_social_btns cs_style_1">
+                  <!--
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-linkedin-in"></i></a>
+                  -->
+                </div>
+              </li>
+            </ul>
+
+            <!--
+            <ul class="cs_footer_nav_list cs_mp_0" style="margin-top: 50px !important; list-style-type: none !important;">
+              <li class="no-counter-increment"></li>
+              <li class="no-counter-increment"></li>
+              <li class="no-counter-increment"> -->
+                <div class="cs_social_btns cs_style_1" style="margin-top: 50px;">
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              <!-- </li>
+            </ul> -->
+
+          </div>
+          <div class="cs_footer_address">
+            <ul class="cs_footer_address_list cs_mp_0">
+              <li>
+                <p class="cs_fs_20 cs_accent_color cs_mb_5">Vị trí</p>
+                <h3 class="cs_fs_48 cs_white_color mb-0">123 Nguyễn Văn Đậu
+Căn Hộ, TP.HCM, Việt Nam</h3>
+              </li>
+              <li>
+                <p class="cs_fs_20 cs_accent_color cs_mb_5">Phone</p>
+                <a href="tel:1234567890" aria-label="Make a call link" class="cs_fs_48 cs_heading_font">(123) 456-7890</a>
+              </li>
+              <li style="width: 315px !important; display: flex; justify-content: center; align-items: center;">
+                <div class="cs_footer_logo" data-aos="zoom-in">
+                  <img src="assets/img/logo-2.svg" alt="Logo" style="height: 60px !important;">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_bottom position-relative">
+          <div class="cs_bottom_content">
+            <!-- <div class="cs_copyright_text">Copyright &copy; <span class="cs_getting_year"></span> Nguyễn Văn Đậu - rozee. All rights reserved.</div> -->
+            <div class="cs_copyright_text">Bản quyền &copy; <span class="cs_getting_year"></span> Nguyễn Văn Đậu - rozee. Mọi quyền được bảo lưu.</div>
+            <ul class="cs_privacy_links cs_mp_0">
+              <li><a href="#" aria-label="Privacy policy link">Chính sách bảo mật.</a></li>
+              <li><a href="#" aria-label="Term & condition link">Điều khoản & Điều kiện.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+    <!-- Start Scroll Top Button -->
+    <button type="button" class="cs_scrollup" id="scrollToTopBtn">
+      <svg style="width: 100%; height: 100%;" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.9999 33.0001C24.3835 33.0001 24.7675 32.8535 25.0604 32.5606L40.0604 17.5606C40.6465 16.9745 40.6465 16.0253 40.0604 15.4396C39.4743 14.8538 38.5252 14.8535 37.9394 15.4396L23.9999 29.3791L10.0604 15.4396C9.47428 14.8535 8.52515 14.8535 7.9394 15.4396C7.35365 16.0257 7.35328 16.9748 7.9394 17.5606L22.9394 32.5606C23.2323 32.8535 23.6163 33.0001 23.9999 33.0001Z" fill="currentColor"></path>
+      </svg>
+    </button>
+    <!-- End Scroll Top Button -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

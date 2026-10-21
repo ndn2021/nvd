@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nguyễn Văn Đậu - Focuses on smart layout flow, child safety, community integration, and long-term flexibility.">
+    <meta name="author" content="rozee">
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="assets/img/favicon.png"> -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <!-- All CSS Files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Site Title -->
+    <title>Nguyễn Văn Đậu - Chi Tiết Blog</title>
+  </head>
+  <body>
+    <!-- Start Preloader -->
+    <div class="cs_preloader cs_center">
+      <div class="cs_preloader_in cs_center_column text-center">
+        <span class="cs_hotel_icon cs_center cs_radius_100 cs_mb_24 position-relative">
+        <span class="cs_fs_64 cs_accent_color cs_heading_font position-relative z-1">NVĐ</span>
+        </span>
+        <h3 class="cs_loading_text cs_fs_24 text-uppercase mb-0">đang tải</h3>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!-- Start Header Section -->
+    <header class="cs_site_header cs_style_1 cs_white_color cs_sticky_header">
+      <div class="cs_header_top">
+        <div class="container">
+          <div class="cs_header_top_in">
+            <div class="cs_header_top_left">
+              <a href="index.html" aria-label="Home page link" class="cs_site_brand">
+              <img src="assets/img/logo.svg" alt="Logo">
+              </a>
+            </div>
+            <div class="cs_header_top_center">
+              <div class="cs_location_info">
+                <span class="cs_location_icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_39_5598" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                      <path d="M0 1.90735e-06H24V24H0V1.90735e-06Z" fill="currentColor"/>
+                    </mask>
+                    <g mask="url(#mask0_39_5598)">
+                      <path d="M12 23.2969C9.1875 19.0781 4.26562 13.3594 4.26562 8.4375C4.26562 4.17277 7.73527 0.703127 12 0.703127C16.2647 0.703127 19.7344 4.17277 19.7344 8.4375C19.7344 13.3594 14.8125 19.0781 12 23.2969Z" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 11.9531C10.0616 11.9531 8.48438 10.3759 8.48438 8.4375C8.48438 6.49908 10.0616 4.92188 12 4.92188C13.9384 4.92188 15.5156 6.49908 15.5156 8.4375C15.5156 10.3759 13.9384 11.9531 12 11.9531Z" stroke="currentColor" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                  </svg>
+                </span>
+                <span class="cs_location_text">123 Nguyễn Văn Đậu Căn Hộ, TP.HCM, Việt Nam</span>
+              </div>
+            </div>
+            <div class="cs_header_top_right">
+              <div class="cs_user_area position-relative">
+                <div class="cs_btn_group">
+                  <button type="button" aria-label="Search toggle button" class="cs_user_btn cs_search_toggler cs_center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_39_5576)">
+                        <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37878 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37878 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_39_55761">
+                          <rect width="24" height="24" fill="currentColor"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button aria-label="User button" class="cs_user_btn cs_user_toggler cs_center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_39_5596)">
+                        <path d="M20.4853 3.51471C18.2188 1.24823 15.2053 0 12 0C8.79474 0 5.78119 1.24823 3.51471 3.51471C1.24823 5.78119 0 8.79474 0 12C0 15.2053 1.24823 18.2188 3.51471 20.4853C5.78119 22.7518 8.79474 24 12 24C15.2053 24 18.2188 22.7518 20.4853 20.4853C22.7518 18.2188 24 15.2053 24 12C24 8.79474 22.7518 5.78119 20.4853 3.51471ZM5.20807 20.1233C5.60431 16.7139 8.53564 14.0815 12 14.0815C13.8263 14.0815 15.5436 14.7931 16.8354 16.0847C17.9268 17.1762 18.6151 18.6013 18.7921 20.1231C16.9519 21.6643 14.5825 22.5938 12 22.5938C9.41748 22.5938 7.04828 21.6645 5.20807 20.1233ZM12 12.6332C9.99042 12.6332 8.35529 10.998 8.35529 8.98846C8.35529 6.9787 9.99042 5.34375 12 5.34375C14.0096 5.34375 15.6447 6.9787 15.6447 8.98846C15.6447 10.998 14.0096 12.6332 12 12.6332ZM20.0024 18.9344C19.6441 17.4897 18.8969 16.1576 17.8297 15.0905C16.9655 14.2262 15.943 13.5778 14.8279 13.1715C16.1684 12.2624 17.051 10.7265 17.051 8.98846C17.051 6.20343 14.785 3.9375 12 3.9375C9.21497 3.9375 6.94904 6.20343 6.94904 8.98846C6.94904 10.7274 7.83234 12.2639 9.17395 13.1728C8.14801 13.5467 7.19861 14.1248 6.38177 14.8857C5.19891 15.9873 4.3775 17.3919 3.99664 18.9333C2.38367 17.0739 1.40625 14.649 1.40625 12C1.40625 6.15857 6.15857 1.40625 12 1.40625C17.8414 1.40625 22.5938 6.15857 22.5938 12C22.5938 14.6495 21.616 17.075 20.0024 18.9344Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_39_5596">
+                          <rect width="24" height="24" fill="currentColor"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <div class="cs_user_content">
+                    <ul class="cs_user_info_list cs_radius_10 cs_mp_0">
+                      <li>
+                        <div class="cs_avatar cs_style_1">
+                          <div class="cs_avatar_icon cs_center cs_radius_100">
+                            <img src="assets/img/avatar-3.jpg" alt="Avatar">
+                          </div>
+                          <div class="cs_avatar_info">
+                            <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_mb_5">Daniel Blackwell</h3>
+                            <p class="cs_fs_14 mb-0">Travel & Tour Agent</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Dashboard link">
+                        <span class="cs_icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="cs_text">Dashboard</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Booking page link">
+                        <span class="cs_icon"><i class="fa-solid fa-file-pen"></i></span>
+                        <span class="cs_text">My Booking</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Profile page link">
+                        <span class="cs_icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="cs_text">Profile Settings</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" aria-label="Login page link">
+                        <span class="cs_icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="cs_text">Log Out</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_header_main">
+        <div class="container">
+          <div class="cs_main_header_in">
+            <div class="cs_main_header_center">
+              <div class="cs_nav cs_center">
+                <nav class="cs_nav_list_wrap">
+                  <ul class="cs_nav_list cs_mp_0">
+                    <li><a href="index.html" aria-label="Nav link">Trang chủ</a></li>
+                    <li><a href="about-us.html" aria-label="Nav link">Giới thiệu</a></li>
+
+                    <li>
+                      <a href="index.html" aria-label="Home page link" class="cs_site_brand">
+                        <img src="assets/img/logo.svg" alt="Logo" style="height: 60px !important;">             
+                      </a>
+                    </li>
+                    <li><a href="blog.html" aria-label="Nav link">Blog</a></li>
+                    <li><a href="contact-us.html" aria-label="Nav link">Liên hệ</a></li>
+                    <li class="cs_language_select">
+                      <div class="cs_language_switcher">
+                        <input type="button" value="EN">
+                      </div>
+                      <div class="cs_language_dropdown">
+                        <input type="button" value="EN">
+                        <input type="button" value="BN">
+                        <input type="button" value="ES">
+                        <input type="button" value="AR">
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Start Header Search Container -->
+    <div class="cs_header_search">
+      <div class="cs_header_search_in">
+        <div class="container">
+          <div class="cs_header_search_box">
+            <form action="#" class="cs_search_form position-relative">
+              <input type="text" name="search-text" placeholder="Tìm kiếm ..." autocomplete="search-text">
+              <button class="cs_search_btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_39_55762)">
+                    <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37878 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37878 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_39_55763">
+                      <rect width="24" height="24" fill="currentColor"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </form>
+            <button class="cs_close" type="button"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="cs_sidenav_overlay"></div>
+    </div>
+    <!-- End Header Search Container -->
+    <!-- End Header Section -->
+    <!-- Start Page Heading Section -->
+    <section class="cs_page_header cs_style_1 cs_bg_filed position-relative" data-src="assets/img/page-header-4.jpg">
+      <div class="container">
+        <div class="cs_page_header_content cs_center_column position-relative z-2">
+          <ol class="breadcrumb cs_mb_30">
+            <li class="breadcrumb-item"><a aria-label="Back to home page link" href="/">Trang chủ</a></li>
+            <li class="breadcrumb-item active">Blog</li>
+          </ol>
+          <h2 class="cs_fs_180 cs_white_color text-center mb-0" data-aos="zoom-in">TIN TỨC & CẬP NHẬT</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End Page Heading Section -->
+
+
+
+    <!-- Start Post Details Section -->
+    <section>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="row cs_gap_y_40">
+          <div class="col-xl-4 order-xl-2">
+           <aside class="cs_sidebar cs_style_2">
+              <div class="cs_height_35 cs_height_lg_0"></div>
+              <div class="cs_sidebar_widget">
+                <form action="#" class="cs_sidebar_search position-relative">
+                  <input type="text" name="search-text" placeholder="Nhập từ khóa của bạn...">
+                  <button type="button" class="cs_search_btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_39_5576)">
+                        <path d="M23.7723 22.6943L17.5759 16.5969C19.1985 14.834 20.1955 12.5024 20.1955 9.93682C20.1947 4.44852 15.6742 0 10.0974 0C4.52055 0 0 4.44852 0 9.93682C0 15.4251 4.52055 19.8736 10.0974 19.8736C12.5069 19.8736 14.7169 19.0402 16.4529 17.6546L22.6733 23.776C22.9764 24.0746 23.4685 24.0746 23.7716 23.776C24.0754 23.4775 24.0754 22.9929 23.7723 22.6943ZM10.0974 18.3448C5.37878 18.3448 1.55362 14.5804 1.55362 9.93682C1.55362 5.29321 5.37878 1.52884 10.0974 1.52884C14.816 1.52884 18.6411 5.29321 18.6411 9.93682C18.6411 14.5804 14.816 18.3448 10.0974 18.3448Z" fill="currentColor"/>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_39_5576">
+                          <rect width="24" height="24" fill="currentColor"/>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="cs_sidebar_widget">
+                <h3 class="cs_sidebar_widget_title cs_fs_24 cs_accent_color cs_body_font cs_mb_60 cs_mb_lg_30">CÁC BÀI VIẾT PHỔ BIẾN</h3>
+                <ul class="cs_popular_post_list cs_mp_0">
+                  <li>
+                    <article class="cs_post cs_style_3" data-aos="fade-right">
+                      <h3 class="cs_post_title cs_fs_32 cs_mb_24">
+                        <a href="blog-details.html" aria-label="View post details link">Mẹo đi du lịch cùng trẻ em: Tận dụng tối đa kỳ nghỉ gia đình của bạn</a>
+                      </h3>
+                      <div class="cs_post_meta cs_heading_color">
+                        <span class="cs_post_author cs_medium">Jeremy Wilson</span>
+                        <span class="cs_post_date cs_fs_16 cs_normal">July 2, 2023</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="cs_post cs_style_3" data-aos="fade-right">
+                      <h3 class="cs_post_title cs_fs_32 cs_mb_24">
+                        <a href="blog-details.html" aria-label="View post details link">Nguyễn Văn Đậu Những Lựa Chọn Hàng Đầu Cho Kỳ Nghỉ Lãng Mạn</a>
+                      </h3>
+                      <div class="cs_post_meta cs_heading_color">
+                        <span class="cs_post_author cs_medium">Emma White</span>
+                        <span class="cs_post_date cs_fs_16 cs_normal">February 14, 2023</span>
+                      </div>
+                    </article>
+                  </li>
+                  <li>
+                    <article class="cs_post cs_style_3" data-aos="fade-right">
+                      <h3 class="cs_post_title cs_fs_32 cs_mb_24">
+                        <a href="blog-details.html" aria-label="View post details link">Tại sao Nguyễn Văn Đậu là ngôi nhà hoàn hảo cho bạn</a>
+                      </h3>
+                      <div class="cs_post_meta cs_heading_color">
+                        <span class="cs_post_author cs_medium">Olivia Johnson</span>
+                        <span class="cs_post_date cs_fs_16 cs_normal">January 10, 2025</span>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="cs_sidebar_widget">
+                <h3 class="cs_sidebar_widget_title cs_fs_24 cs_accent_color cs_body_font cs_mb_30">THẺ PHỔ BIẾN</h3>
+                <div class="cs_tag_links">
+                  <a href="#" class="cs_tag_link">Nhập từ khóa của bạn...</a>
+                  <a href="#" class="cs_tag_link">ẨM THỰC</a>
+                  <a href="#" class="cs_tag_link">ĐÁNH GIÁ</a>
+                  <a href="#" class="cs_tag_link">ĐIỂM THAM QUAN ĐỊA PHƯƠNG</a>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-xl-8 order-xl-1">
+            <div class="cs_post_details">
+              <div class="cs_post_heading">
+                <p>Điểm tham quan địa phương</p>
+                <h2 data-aos="fade-down">5 Lý Do Tại Sao Nguyễn Văn Đậu Là Nơi Đáng Sống Nhất Cho Gia Đình Bạn</h2>
+              </div>
+              <div class="cs_post_meta_wrapper">
+                <div class="cs_avatar cs_style_1">
+                  <div class="cs_avatar_icon cs_center cs_radius_100">
+                    <img src="assets/img/avatar-10.jpg" alt="Avatar">
+                  </div>
+                  <div class="cs_avatar_info">
+                    <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_8">Eleanor Kim</h3>
+                    <p class="cs_fs_16 cs_heading_color cs_normal mb-0">July 20, 2025</p>
+                  </div>
+                </div>
+                <div class="cs_post_shares">
+                  <div class="cs_share_btn cs_accent_color">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M30.8456 26.9058C28.9291 26.9058 27.2024 27.7334 26.004 29.0499L15.2249 22.3739C15.5127 21.6372 15.6723 20.8371 15.6723 20C15.6723 19.1626 15.5127 18.3624 15.2249 17.626L26.004 10.9497C27.2024 12.2662 28.9291 13.0941 30.8456 13.0941C34.4558 13.0941 37.3928 10.1571 37.3928 6.54692C37.3928 2.9367 34.4558 0 30.8456 0C27.2354 0 24.2984 2.93701 24.2984 6.54723C24.2984 7.38432 24.4583 8.18449 24.7457 8.92118L13.967 15.5972C12.7685 14.2807 11.0419 13.4527 9.12535 13.4527C5.51513 13.4527 2.57812 16.39 2.57812 20C2.57812 23.6102 5.51513 26.5472 9.12535 26.5472C11.0419 26.5472 12.7685 25.7196 13.967 24.4027L24.7457 31.0787C24.4583 31.8154 24.2984 32.6156 24.2984 33.453C24.2984 37.0629 27.2354 39.9999 30.8456 39.9999C34.4558 39.9999 37.3928 37.0629 37.3928 33.453C37.3928 29.8428 34.4558 26.9058 30.8456 26.9058ZM26.6857 6.54723C26.6857 4.25353 28.5519 2.38739 30.8456 2.38739C33.1393 2.38739 35.0054 4.25353 35.0054 6.54723C35.0054 8.84092 33.1393 10.7071 30.8456 10.7071C28.5519 10.7071 26.6857 8.84092 26.6857 6.54723ZM9.12535 24.1598C6.83135 24.1598 4.9652 22.2937 4.9652 20C4.9652 17.7063 6.83135 15.8401 9.12535 15.8401C11.419 15.8401 13.2849 17.7063 13.2849 20C13.2849 22.2937 11.419 24.1598 9.12535 24.1598ZM26.6857 33.4527C26.6857 31.159 28.5519 29.2928 30.8456 29.2928C33.1393 29.2928 35.0054 31.159 35.0054 33.4527C35.0054 35.7464 33.1393 37.6125 30.8456 37.6125C28.5519 37.6125 26.6857 35.7464 26.6857 33.4527Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                  <div class="cs_post_category">Nguyễn Văn Tin tức</div>
+                </div>
+              </div>
+              <div class="cs_post_banner cs_mb_40 cs_mb_lg_30" data-aos="fade-up">
+                <img src="assets/img/post-banner.jpg" alt="Post Banner">
+              </div>
+              <p>Nếu bạn đang tìm kiếm một địa điểm đẹp và sang trọng để tổ chức sự kiện sắp tới, thì Nguyễn Văn Đậu chính là lựa chọn lý tưởng dành cho bạn. Dưới đây là năm lý do vì sao Nguyễn Văn Đậu là nơi tuyệt vời nhất để tổ chức sự kiện của bạn:</p>
+              <article>
+                <img src="assets/img/article-img-1.jpg" alt="Post article image">
+                <h2 class="cs_section_title" data-aos="fade-up"><span>01</span>Phong Cảnh Ngoạn Mục</h2>
+                <p>Nguyễn Văn Đậu tọa lạc tại một vị trí tuyệt đẹp với tầm nhìn ngoạn mục ra khung cảnh thiên nhiên xung quanh. Cảnh quan ấn tượng này tạo nên phông nền hoàn hảo cho mọi sự kiện, từ đám cưới đến các sự kiện doanh nghiệp.</p>
+              </article>
+              <article>
+                <img src="assets/img/article-img-2.jpg" alt="Post article image">
+                <h2 class="cs_section_title" data-aos="fade-up"><span>02</span>Chỗ ở Sang Trọng</h2>
+                <p>Nguyễn Văn Đậu cung cấp các lựa chọn lưu trú sang trọng, vô cùng lý tưởng cho khách mời tham dự sự kiện của bạn. Với không gian nghỉ dưỡng rộng rãi cùng khu vui chơi dành cho trẻ em, khách mời của bạn sẽ được tận hưởng sự thoải mái và đẳng cấp tuyệt vời nhất.</p>
+              </article>
+              <article>
+                <img src="assets/img/article-img-3.jpg" alt="Post article image">
+                <h2 class="cs_section_title" data-aos="fade-up"><span>03</span>Cơ Sở Vật Chất Đẳng Cấp Thế Giới</h2>
+                <p>Nguyễn Văn Đậu cung cấp các cơ sở vật chất đẳng cấp thế giới, hoàn hảo cho mọi quy mô sự kiện. Từ các khu vực hội nghị, phòng đại tiệc cho đến không gian ngoài trời, bạn sẽ có vô vàn lựa chọn phù hợp. Bên cạnh đó, tổ hợp này còn được trang bị hệ thống thiết bị nghe nhìn hiện đại cùng đường truyền internet tốc độ cao, đảm bảo sự kiện của bạn diễn ra một cách suôn sẻ.</p>
+              </article>
+              <article>
+                <img src="assets/img/article-img-4.jpg" alt="Post article image">
+                <h2 class="cs_section_title" data-aos="fade-up"><span>04</span>Dịch vụ xuất sắc</h2>
+                <p>Tại Nguyễn Văn Đậu, bạn sẽ được trải nghiệm dịch vụ vượt trội từ đầu đến cuối. Đội ngũ lên kế hoạch sự kiện giàu kinh nghiệm tại đây sẽ đồng hành cùng bạn để tạo nên một sự kiện được thiết kế riêng, đáp ứng mọi nhu cầu và vượt xa cả mong đợi của bạn. Từ khâu phục vụ ẩm thực cho đến trang trí, mọi chi tiết đều sẽ được chăm chút kỹ lưỡng.</p>
+              </article>
+              <article>
+                <img src="assets/img/article-img-5.jpg" alt="Post article image">
+                <h2 class="cs_section_title" data-aos="fade-up"><span>05</span>Những trải nghiệm khó quên</h2>
+                <p>Khi tổ chức sự kiện tại Nguyễn Văn Đậu, bạn cùng các khách mời sẽ có cơ hội tận hưởng nhiều trải nghiệm khó quên. Từ việc thư giãn tại spa gần đó cho đến những giây phút nghỉ ngơi tại khu vui chơi được thiết kế chỉn chu, nơi đây mang đến vô vàn hoạt động thú vị để các khách mời luôn cảm thấy hào hứng.</p>
+              </article>
+              <div class="cs_post_quote cs_cream_bg cs_center_column text-center">
+                <span class="cs_quote_icon" data-aos="zoom-in">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5333 47.1995C9.86666 44.2662 8.26666 41.0662 8.26666 35.7329C8.26666 26.3995 14.9333 18.1329 24.2667 13.8662L26.6667 17.3329C17.8667 22.1329 16 28.2662 15.4667 32.2662C16.8 31.4662 18.6667 31.1995 20.5333 31.4662C25.3333 31.9995 29.0667 35.7329 29.0667 40.7995C29.0667 43.1995 28 45.5995 26.4 47.4662C24.5333 49.3329 22.4 50.1329 19.7333 50.1329C16.8 50.1329 14.1333 48.7995 12.5333 47.1995ZM39.2 47.1995C36.5333 44.2662 34.9333 41.0662 34.9333 35.7329C34.9333 26.3995 41.6 18.1329 50.9333 13.8662L53.3333 17.3329C44.5333 22.1329 42.6667 28.2662 42.1333 32.2662C43.4667 31.4662 45.3333 31.1995 47.2 31.4662C52 31.9995 55.7333 35.7329 55.7333 40.7995C55.7333 43.1995 54.6667 45.5995 53.0667 47.4662C51.4667 49.3329 49.0667 50.1329 46.4 50.1329C43.4667 50.1329 40.8 48.7995 39.2 47.1995Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <blockquote>Một nơi có thể tạo ra một ký ức. Vì vậy, hãy biến những khoảnh khắc đáng nhớ của bạn thành nơi tốt nhất mà bạn có thể chọn.</blockquote>
+              </div>
+              <p>Tóm lại, Nguyễn Văn Đậu chính là địa điểm lý tưởng nhất để tổ chức sự kiện sắp tới của bạn. Với khung cảnh tuyệt đẹp, cơ sở lưu trú sang trọng, tiện nghi đẳng cấp thế giới, dịch vụ vượt trội cùng những trải nghiệm khó quên, sự kiện của bạn chắc chắn sẽ diễn ra thành công tốt đẹp. Hãy liên hệ với đội ngũ lên kế hoạch sự kiện tại Nguyễn Văn Đậu ngay hôm nay để bắt đầu chuẩn bị cho sự kiện tiếp theo của bạn.</p>
+              <div class="cs_prevnext_btns">
+                <a href="#" aria-label="view previous post" class="cs_text_btn cs_accent_color cs_medium text-capitalize">Bài viết trước</a>
+                <a href="#" aria-label="view next post" class="cs_text_btn cs_accent_color cs_medium text-capitalize">Bài viết tiếp theo</a>
+              </div>
+            </div>
+            <div class="cs_comments_ares">
+              <h2 class="cs_fs_48 cs_mb_40 cs_mb_lg_24">Bình luận (30)</h2>
+              <ol class="cs_comments_list cs_mp_0">
+                <li class="cs_comment_body">
+                  <p>Gần đây, tôi đã tổ chức một sự kiện doanh nghiệp tại Nguyễn Văn Đậu và mọi thứ thực sự tuyệt vời! Khung cảnh ở đây đẹp đến ngỡ ngàng, còn cơ sở vật chất thì vô cùng đẳng cấp. Đội ngũ lên kế hoạch sự kiện đã nỗ lực hết mình để đảm bảo mọi khâu đều diễn ra suôn sẻ. Tôi thực sự khuyên bạn nên chọn Nguyễn Văn Đậu nếu đang tìm kiếm một địa điểm tổ chức sự kiện sang trọng và đáng nhớ.</p>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-11.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_8">Sophia Trent</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Khách hàng đám cưới</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cs_comment_body">
+                  <p>Nguyễn Văn Đậu là địa điểm hoàn hảo để tổ chức đám cưới. Nơi đây có khung cảnh vô cùng tuyệt đẹp, nhìn ra khu vườn và cảnh quan xung quanh. Cơ sở vật chất lưu trú rất sang trọng, còn đội ngũ lên kế hoạch sự kiện thì thực sự xuất sắc. Đám cưới của chúng tôi đã diễn ra đúng như những gì chúng tôi hằng mơ ước, thậm chí còn tuyệt vời hơn thế. Rất đáng để lựa chọn!</p>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-12.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Chloe Whitman</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Khách hàng đám cưới</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="cs_comment_body">
+                  <p>Gần đây tôi có tham dự một hội nghị tại Nguyễn Văn Đậu và phải nói rằng, đây là một trong những trải nghiệm hội nghị tuyệt vời nhất mà tôi từng có. Cơ sở vật chất ở đây vô cùng hiện đại, còn đội ngũ tổ chức sự kiện thì cực kỳ chuyên nghiệp và chỉn chu. Vị trí tổ chức cũng là một điểm cộng lớn – thật sảng khoái khi được đắm mình trong khung cảnh thiên nhiên tươi đẹp như vậy. Rất đáng để cân nhắc cho bất kỳ loại hình sự kiện nào!</p>
+                  <div class="cs_avatar cs_style_1">
+                    <div class="cs_avatar_icon cs_center cs_radius_100">
+                      <img src="assets/img/avatar-13.jpg" alt="Avatar">
+                    </div>
+                    <div class="cs_avatar_info">
+                      <h3 class="cs_avatar_title cs_fs_20 cs_medium cs_body_font cs_mb_3">Lucas Harlow</h3>
+                      <p class="cs_fs_16 cs_heading_color cs_normal mb-0">Khách hàng đám cưới</p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+            <div class="cs_height_60 cs_height_lg_50"></div>
+            <ul class="pagination cs_mp_0">
+              <li class="page-item"><a class="page-link" href="#">
+                <i class="fa-solid fa-chevron-left"></i></a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">01</a></li>
+              <li class="page-item"><a class="page-link" href="#">02</a></li>
+              <li class="page-item"><a class="page-link" href="#">03</a></li>
+              <li class="page-item disabled"><span>...</span></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item"><a class="page-link" href="#">
+                <i class="fa-solid fa-chevron-right"></i></a>
+              </li>
+            </ul>
+            <div class="cs_comment_form_wrapper cs_heading_bg">
+              <h2 class="cs_fs_48 cs_white_color cs_mb_19">Để lại bình luận</h2>
+              <form action="#" class="cs_comment_form">
+                <div class="cs_input_wrapper">
+                  <label for="name">Tên của bạn</label>
+                  <input type="text" name="name" placeholder="Nhập tên hiển thị của bạn..." id="name" class="cs_form_field">
+                </div>
+                <div class="cs_input_wrapper">
+                  <label for="email">Email của bạn</label>
+                  <input type="email" name="email" placeholder="Nhập địa chỉ email của bạn..." id="email" class="cs_form_field">
+                </div>
+                <div class="cs_input_wrapper">
+                  <label for="comment">Bình luận của bạn</label>
+                  <textarea rows="5" name="comment" id="comment" placeholder="Nhập tin nhắn của bạn tại đây..." class="cs_form_field"></textarea>
+                </div>
+                <div class="cs_input_wrapper">
+                  <div class="form-check m-0">
+                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                    <label class="cs_fs_16 cs_gray_color form-check-label m-0" for="flexCheckDefault">
+                    Bằng cách đánh dấu vào ô này, tôi đồng ý với Chính sách Cộng đồng Nguyễn Văn Đậu và đồng ý nhận các thông tin cập nhật cũng như chương trình khuyến mãi mới từ Nguyễn Văn Đậu thông qua bản tin.
+                    </label>
+                  </div>
+                  <button type="submit" aria-label="Form submit button" class="cs_btn cs_style_1 cs_accent_bg cs_white_hover cs_white_color cs_medium text-uppercase" data-aos="fade-up">
+                  <span>Nộp</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Post Section -->
+
+
+
+    <!-- Start Newsletter Section -->
+    <section class="cs_cream_bg">
+      <div class="cs_height_120 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_newsletter cs_style_1">
+          <div class="cs_section_heading cs_style_1 text-center">
+            <p class="cs_section_subtitle cs_fs_24 cs_accent_color cs_mb_16 text-uppercase">bản tin</p>
+            <h2 class="cs_section_title cs_fs_64 cs_mb_24" data-aos="fade-down">Tham Gia Danh Sách Gửi Thư Của Chúng Tôi</h2>
+            <p class="cs_mb_48 cs_mb_lg_30">Hãy tham gia danh sách nhận thư của chúng tôi để nhận các ưu đãi độc quyền, thông tin cập nhật và tin tức về Nguyễn Văn Đậu Apartment. <br> Trở thành người đầu tiên biết về các chương trình khuyến mãi, sự kiện và các ưu đãi đặc biệt của chúng tôi. Hãy đăng ký ngay để giữ kết nối với chúng tôi.</p>
+            <form action="#" class="cs_newsletter_form position-relative">
+              <input type="email" name="email" autocomplete="given-name" placeholder="Nhập địa chỉ email của bạn ..." required>
+              <button class="cs_btn cs_style_1 cs_heading_bg cs_white_color cs_medium text-uppercase" data-aos="zoom-in">
+              <span>Đăng ký</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="cs_height_120 cs_height_lg_80"></div>
+    </section>
+    <!-- End Newsletter Section -->
+
+
+
+    <!-- Start Footer Section -->
+    <footer class="cs_footer cs_style_1 cs_type_1 cs_heading_bg cs_white_color">
+      <div class="cs_height_103 cs_height_lg_80"></div>
+      <div class="container">
+        <div class="cs_footer_main">
+          <div class="cs_footer_nav cs_fs_48 cs_heading_font cs_mb_60">
+            <ul class="cs_footer_nav_list cs_mp_0">
+              <li><a href="about-us.html" aria-label="Page link">Giới thiệu</a></li>
+              <li><a href="blog.html" aria-label="Page link">Blog</a></li>
+              <li><a href="contact-us.html" aria-label="Page link">Liên hệ</a></li>
+              <!--
+              <li><a href="blog.html" aria-label="Page link">Blog</a></li>
+              <li><a href="contact-us.html" aria-label="Page link">Contact</a></li>
+              -->
+              <li>
+                <div class="cs_social_btns cs_style_1">
+                  <!--
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-linkedin-in"></i></a>
+                  -->
+                </div>
+              </li>
+            </ul>
+
+            <!--
+            <ul class="cs_footer_nav_list cs_mp_0" style="margin-top: 50px !important; list-style-type: none !important;">
+              <li class="no-counter-increment"></li>
+              <li class="no-counter-increment"></li>
+              <li class="no-counter-increment"> -->
+                <div class="cs_social_btns cs_style_1" style="margin-top: 50px;">
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#" aria-label="Social link"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+              <!-- </li>
+            </ul> -->
+
+          </div>
+          <div class="cs_footer_address">
+            <ul class="cs_footer_address_list cs_mp_0">
+              <li>
+                <p class="cs_fs_20 cs_accent_color cs_mb_5">Vị trí</p>
+                <h3 class="cs_fs_48 cs_white_color mb-0">123 Nguyễn Văn Đậu Căn Hộ, TP.HCM, Việt Nam</h3>
+              </li>
+              <li>
+                <p class="cs_fs_20 cs_accent_color cs_mb_5">Phone</p>
+                <a href="tel:1234567890" aria-label="Make a call link" class="cs_fs_48 cs_heading_font">(123) 456-7890</a>
+              </li>
+              <li style="width: 315px !important; display: flex; justify-content: center; align-items: center;">
+                <div class="cs_footer_logo" data-aos="zoom-in">
+                  <img src="assets/img/logo-2.svg" alt="Logo" style="height: 60px !important;">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cs_footer_bottom position-relative">
+          <div class="cs_bottom_content">
+            <!-- <div class="cs_copyright_text">Copyright &copy; <span class="cs_getting_year"></span> Nguyễn Văn Đậu - rozee. All rights reserved.</div> -->
+            <div class="cs_copyright_text">Bản quyền &copy; <span class="cs_getting_year"></span> Nguyễn Văn Đậu - rozee. Mọi quyền được bảo lưu.</div>
+            <ul class="cs_privacy_links cs_mp_0">
+              <li><a href="#" aria-label="Privacy policy link">Chính sách bảo mật.</a></li>
+              <li><a href="#" aria-label="Term & condition link">Điều khoản & Điều kiện.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+
+
+    <!-- Start Scroll Top Button -->
+    <button type="button" class="cs_scrollup" id="scrollToTopBtn">
+      <svg style="width: 100%; height: 100%;" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.9999 33.0001C24.3835 33.0001 24.7675 32.8535 25.0604 32.5606L40.0604 17.5606C40.6465 16.9745 40.6465 16.0253 40.0604 15.4396C39.4743 14.8538 38.5252 14.8535 37.9394 15.4396L23.9999 29.3791L10.0604 15.4396C9.47428 14.8535 8.52515 14.8535 7.9394 15.4396C7.35365 16.0257 7.35328 16.9748 7.9394 17.5606L22.9394 32.5606C23.2323 32.8535 23.6163 33.0001 23.9999 33.0001Z" fill="currentColor"></path>
+      </svg>
+    </button>
+    <!-- End Scroll Top Button -->
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

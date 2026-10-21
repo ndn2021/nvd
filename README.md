@@ -1,2 +1,2 @@
 # nvd
-website for Nguyễn Văn Đậu apartment complex
+A Static website for Nguyễn Văn Đậu apartment complex.
